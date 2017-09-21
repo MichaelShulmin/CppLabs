@@ -1,0 +1,2 @@
+﻿  main.cpp
+c:\users\admin\appdata\roaming\microsoft\windows\start menu\programs\axosoft, llc\cpplabs\v6_zadacha №2\v6_zadacha №2\main.cpp(18): fatal error C1010: непредвиденный конец файла во время поиска предкомпилированного заголовка. Возможно, вы забыли добавить директиву "#include "stdafx.h"" в источник.
