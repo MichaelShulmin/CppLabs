@@ -1,2 +1,6 @@
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.15063.0
+<<<<<<< HEAD
 Debug|Win32|C:\Users\Admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Axosoft, LLC\CppLabs\first labs\v6_zadacha №2\|
+=======
+Debug|Win32|C:\Users\Admin\AppData\Roaming\Microsoft\Windows\Start menu\Programs\Axosoft, LLC\CppLabs\v6_zadacha №2\|
+>>>>>>> master
