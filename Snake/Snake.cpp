@@ -2,6 +2,7 @@
 #include<conio.h>
 #include<Windows.h>
 #include<fstream>
+#include <ctime>
 
 using namespace std;
 
@@ -15,13 +16,18 @@ int nTail;
 enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN };
 eDirection dir;
 
+void Random() {
+	srand(time(NULL));
+	fruitX = rand() % width;
+	fruitY = rand() % height;
+}
+
 void Setup() {
 	gameOver = false;
 	dir = STOP;
 	x = width / 2 - 1;
 	y = height / 2 - 1;
-	fruitX = rand() % width;
-	fruitY = rand() % height;
+	Random();
 	score = 0;
 }
 
@@ -127,8 +133,7 @@ void Logic() {
 
 	if (x == fruitX&&y == fruitY) {
 		score += 10;
-		fruitX = rand() % width;
-		fruitY = rand() % height;
+		Random();
 		nTail++;
 	}
 }
@@ -139,7 +144,7 @@ int main() {
 		Draw();
 		Input();
 		Logic();
-		Sleep(350);
+		Sleep(200);
 	}
 	int number;
 	cout << "Enter the number" << endl;
